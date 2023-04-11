@@ -21,12 +21,12 @@ if(isset($_POST['update_profile'])){
 
     if(!empty($update_pass) || !empty($new_pass) || !empty($confirm_pass)){
         if($update_pass != $old_pass){
-            $message[] = 'old password not matched!';
+            $messagein[] = 'не правильный старый пароль';
         }elseif($new_pass != $confirm_pass){
-            $message[] = 'confirm password not matched!';
+            $messagein[] = 'пароли не совпадают';
         }else{
             mysqli_query($conn, "UPDATE `user_form` SET password = '$confirm_pass' WHERE id = '$user_id'") or die('query failed');
-            $message[] = 'password updated successfully!';
+            $message[] = 'пароль был обновлён';
         }
     }
     
@@ -37,13 +37,13 @@ if(isset($_POST['update_profile'])){
     
     if(!empty($update_image)){
         if($update_image_size > 2000000){
-            $message[] = 'image is too large';
+            $messagein[] = 'Слишком большой размер';
         }else{
             $image_udpate_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
             if($image_udpate_query){
                 move_uploaded_file($update_image_tmp_name, $update_image_folder);
             }
-            $message[] = 'image updated successfully!';
+            $message[] = 'Картинка заменена успешна!';
         }
     }
 }
@@ -57,7 +57,7 @@ if(isset($_POST['update_profile'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>update profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -76,7 +76,7 @@ if(isset($_POST['update_profile'])){
     <form action="" method="post" enctype="multipart/form-data">
         <?php
             if($fetch['image'] == ''){
-               echo '<img src="images/default-avatar.png">';
+               echo '<img src="images/default-image.jpg">';
             }else{
                echo '<img src="uploaded_img/'.$fetch['image'].'">';
             }
@@ -85,33 +85,38 @@ if(isset($_POST['update_profile'])){
                   echo '<div class="message">'.$message.'</div>';
                }
             }
+            if(isset($messagein)){
+                foreach($messagein as $messagein){
+                   echo '<div class="messagein">'.$messagein.'</div>';
+                }
+             }
           ?>
          <div class="flex">
             <div class="inputBox">
-                <span>username :</span>
-                <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box">
-                <span>change your email :</span>
-                <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
-                <span>update your pic :</span>
+                <span>Имя :</span>
+                <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box" placeholder="Введите новое имя">
+                <span>Изменить Email :</span>
+                <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box"placeholder="Введите Email">
+                <span>Изменить ваше изображение :</span>
                 <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
             </div>
            
             <div class="inputBox">
                 <input type="hidden" name="old_pswd" value="<?php echo $fetch['password']; ?>">
-                <span>old password :</span>
-                <input type="password" name="update_pass" placeholder="enter previous password"
+                <span>Старый пароль :</span>
+                <input type="password" name="update_pass" placeholder="Введите старый пароль"
                 class ="box">
-                <span>new password :</span>
-                <input type="password" name="new_pass" placeholder="enter new password"
+                <span>Новый пароль:</span>
+                <input type="password" name="new_pass" placeholder="Введите пароль"
                 class ="box">
-                <span>confirm password :</span>
-                <input type="password" name="confirm_pass" placeholder="confirm new password"
+                <span>Повторите новый пароль:</span>
+                <input type="password" name="confirm_pass" placeholder="Повторите новый пароль"
                 class ="box">
             </div>
 
          </div>
-         <input type="submit" value="update profile" name="update_profile" class="butun">
-         <a href="home.php" class="delete-btn">go back</a>
+         <input type="submit" value="Обновить" name="update_profile" class="butun">
+         <a href="home.php" class="delete-btn">Назад</a>
     </form>
 
 </div>

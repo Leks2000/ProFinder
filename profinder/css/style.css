@@ -1,0 +1,401 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+html, h1, h2, h3, h4, h5, h6{
+    color: rgb(70, 65, 58)
+}
+body {
+    background: #fffffff6;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* 
+    HEADER
+ */
+header {
+    background: #689b92;
+    height: 70px;
+} 
+header *{
+    color: white;
+}
+header h1{
+    margin-top: 13px;
+}
+header h1 a{
+    color: white;
+}
+header h1 a:hover{
+    color: white;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 22px;
+    margin-top: -4px;
+}
+header ul li a:hover {
+    background: #293d3a;
+    transition: 0.5s;
+    color: #fff;
+}
+header ul li ul {
+    position: absolute;
+    top: 73px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+}
+header ul li:hover ul {
+    display: block;
+}
+header ul li ul li {
+    width: 120%;
+}
+header ul li ul li a{
+    padding: 10px;
+    background: white;
+    color: #8e8e8e;
+}
+.containerslider{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 30px 0;
+}
+.carousel {
+    height: 400px;
+    width: 100%;
+}
+.carousel-inner, .carousel-item{
+    height: 400px;
+    border-radius: 6px;
+}
+* {box-sizing: border-box;}
+form {
+    position: relative;
+    width: 40vw;
+    margin: 0 auto;
+  }
+  .d1 input {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    background: #ffffff;
+    color: #000000;
+    font-size: 20px;
+  }
+  .d1 button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 90px;
+    height: 60px;
+    border: none;
+    background: #938989;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  .d1 button:before {
+    content: "Найти";
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .search, .d1 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #689b92;
+    text-align: center;
+  }
+  .checkpoints {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  .checkpoints h2{
+    font-size: 1.5vw;
+  }
+  .checkpoints img{
+    height: 3vw;
+  }
+  table {
+    text-align: center;
+    width: 100%;
+  }
+  .first {
+    border-collapse: collapse;
+  }
+  .reviews{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #689b92;
+  }
+  .reviews h1{
+    color:white
+  }
+  .cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1);
+  }
+  .cont2 {
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1);
+  }
+  .card{
+    font-size: 1vw;
+    border-radius: 25px;
+    margin-left: 40px;
+    height: 300px;
+    text-align: center;
+    width: 20vw;
+  }
+  .title{
+    text-align: center;
+  }
+  .reviews p{
+    margin: 0;
+  }
+  .info {
+    margin-top: 15px;
+  }
+  .name {
+    margin-top: 60px;
+  }
+  .image img{
+    height: 250px;
+    width: 1920px;
+  }
+  .instruction{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .instruction p{
+    margin-bottom: 0;
+  }
+  .way p,h3{
+    color: white;
+    margin-top: 10px;
+  }
+  .card2{
+    font-size: 1vw;
+    border-radius: 25px;
+    margin-left: 40px;
+    height: 300px;
+    text-align: center;
+    width: 20vw;
+    background: #689b92;
+  }
+.a, .b{
+    color:white
+}
+
+
+
+
+
+
+
+
+
+
+  .foot {
+    text-align: center;
+    font-size: 1vw;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.479);
+    margin: 0;
+  }
+
+
+
+  @media (max-width: 800px) {
+    .cont {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2);
+    }
+  }
+  @media (max-width: 600px) {
+    .cont {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4);
+    }
+  }
+
+
+
+
+
+
+
+
+  .header2{
+    background: #689b92;
+    height: 70px;
+    padding-top: 8px;
+}
+.container2 h1{
+    text-align: center;
+}
+.title2{
+    font-weight: bold;
+}
+.list1 ul li{
+    padding-left: 40px;
+    display: inline;
+    float: left;
+    position: relative;
+}
+.list1{
+    margin-top: -55px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.first2 a{
+    border: none;
+    font-size: 1.5vw;
+}
+
+
+
+
+
+.dropbtn {
+    background-color: #689b92;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    float: right;
+    margin-right: 80px;
+    margin-top: -17px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    font-size: 1.5vw;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+
+
+
+.header2{
+  background: #689b92;
+  height: 70px;
+  padding-top: 8px;
+}
+.container2 h1{
+  text-align: center;
+}
+.title2{
+  font-weight: bold;
+}
+.list1 ul li{
+  padding-left: 40px;
+  display: inline;
+  float: left;
+  position: relative;
+}
+.list1 ul:hover{
+  transition: 0.5s;
+  background: #4f7570;
+}
+.one:hover{
+  transition: 0.5s;
+  background: #4f7570;
+}
+.list1{
+  margin-top: -55px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.first2 a{
+  border: none;
+  font-size: 1.5vw;
+}
+
+
+
+
+
+.dropbtn {
+  background-color: #689b92;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  float: right;
+  margin-top: -17px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  font-size: 1.5vw;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(70, 65, 58);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
