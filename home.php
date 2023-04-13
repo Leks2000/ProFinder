@@ -2,8 +2,8 @@
 
 @include 'config.php';
 session_start();
-$user_id = $_SESSION['user_id'];
 
+$user_id = $_SESSION['user_id'];
 if(!isset($user_id)){
     header('location:login_form.php');
  };
@@ -43,6 +43,7 @@ if(!isset($user_id)){
 
         <h3><?php echo $fetch['name']; ?></h3>
         <a href="update_profile.php" class="butun">Изменить профиль</a>
+        <a href="profinder/main.php" class="butun">Главная</a>
         <a href="home.php?logout=<?php echo $user_id; ?>" class="delete-btn"
           >Выйти</a
         >

@@ -167,7 +167,7 @@ form {
 }
 
 .d1 button:before {
-  content: 'РќР°Р№С‚Рё';
+  content: 'Найти';
   font-size: 20px;
   color: #ffffff;
 }
@@ -207,6 +207,10 @@ table {
   text-align: center;
   width: 100%;
   margin-bottom: 2%;
+}
+.checkpoints img{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .first {
@@ -286,8 +290,8 @@ table {
   color: #5c5e5d;
 }
 
-.card3 h1{
-margin: 104px 33px 15px 33px;
+.card3 h1 {
+  margin: 104px 33px 15px 33px;
 }
 
 .title {
@@ -320,14 +324,13 @@ margin: 104px 33px 15px 33px;
   margin-bottom: 0;
 }
 
-.way p{
+.way p {
   font-size: 20px;
   text-align: center;
   color: #fcfcfc;
 }
 
-.way
-h3 {
+.way h3 {
   font-size: 22px;
   text-align: center;
   color: #fcfcfc;
@@ -544,51 +547,33 @@ a {
   display: block;
 }
 
-@media (max-width: 480px) {
-
-}
+@media (max-width: 480px) {}
 
 
 
-.img-post{
-  width: 100px;
 
-}
-
- .col-md-4 {
-  flex: 0 0 auto;
-  width: 24%;
-  padding: 0px 0px 0px 106px;
-  margin: 1px 0px 55px 10px;
-}
-
-.main-conent{
-border: 1px #000000;
-}
-
-.forma{
- 
-}
-
-.user{
-  font-size: 20px;
-}
-
-.phone{
-  font-size: 20px;
-}
-
-.hz{
-  font-size: 20px;
-}
-
-.row{
-  --bs-gutter-x: 0.5rem;
-  --bs-gutter-y: 0;
+img,
+svg {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(6.5 * var(--bs-gutter-x));
-  margin-left: calc(-17.5 * var(--bs-gutter-x));
-  margin-bottom: calc(2.5 * var(--bs-gutter-x));
+  margin: 0px 10px;
+}
+
+.vse {
+  display: -webkit-inline-box;
+  margin: 0px 10px;
+}
+
+.uvedomleniya {
+  width: 32px;
+  height: 32px;
+  margin-right: 9px;
+  margin-top: 16px;
+  margin-left: 18px;
+}
+
+.kolichestvo {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin: 12px 0px;
 }

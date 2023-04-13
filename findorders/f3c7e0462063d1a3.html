@@ -1,0 +1,37 @@
+<script>
+    function showMessage() {
+        document.getElementsByClassName("Items")[0]
+        .setAttribute('style', 'grid-template-columns: repeat('+~~(document.body.offsetWidth/105)+',1fr)');
+    }
+</script>
+<style>
+    .Item{
+        width: 100px;
+        border: 1px;
+        border-radius: 10px;
+        border-style: solid;
+    }
+    .Items{
+        margin: 0 3% 0 3%;
+        width: 100%;
+        display: grid;
+        column-gap: 1px;
+        row-gap: 2%;
+    }
+</style>
+<body onresize="showMessage()" onload="showMessage()">
+    <div class="Items">
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+        <div class = "Item"> привет ребят как у вас дела?? давайте будем жить дружно!</div>
+    </div>
+</body>
