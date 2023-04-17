@@ -173,7 +173,7 @@ if(isset($_POST['submit'])){
       <div>  
       </div>
        <div class="rat">
-         <div class="price">2400 ₽</div>
+         <div class="price"><?php echo $fetch_product['price']; ?> ₽</div>
          
          <div class="scattering" onclick="document.getElementById('id01').style.display='block'" ></div>
        </div>
