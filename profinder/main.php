@@ -102,10 +102,16 @@ if(!isset($user_id)){
         }
         }
         ?>
-        
         class="<?php echo $inornouser;?>"><?php echo $log ?></input></a>
+        <?php 
+        if(!empty($_SESSION['user_id'])){
+        ?>
+        
         <input type="image" class="<?php echo $uved?>" src="<?php echo $image?>">
         <div class="kolichestvo"><?php echo 4?></div>
+        <?php
+        };
+        ?>
         <div class="dropdown-content"></div>
       </div>
       </div>
