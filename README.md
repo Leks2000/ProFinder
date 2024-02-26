@@ -1,5 +1,7 @@
-</div align="center">  Сайт не рамзещён на хостинге,
-Для запуска сайта необходимо закинуть в папку приложенияя ampps файлы разахривиронного сайта  
+</div align="center">  
+
+Сайт не рамзещён на хостинге, <br>
+Для запуска сайта необходимо закинуть в папку приложенияя ampps файлы разахривиронного сайта.  
 
 ![image](https://github.com/Leks2000/databasehakaton/assets/107043945/205a5d3a-224d-4c2f-a590-ea87c471daba)
 ![image](https://github.com/Leks2000/databasehakaton/assets/107043945/b966da4f-c9bf-4606-b26d-7d1058b8c05d)
