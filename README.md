@@ -36,10 +36,10 @@ ProFinder - это веб-сервис, предназначенный для с
 </div>
 
   ###
- - [Leks2000](https://github.com/Leks2000) - Халле Александр - (Backend)
- - [LaNs992](https://github.com/LaNs992) - Бажин Кирилл - (Frontend)
- - [kirillaleynikov](https://github.com/kirillaleynikov) - Алейников Кирилл - (Frontend)
- - [Leks2000]() - Халле Александр - (Frontend)
+ - [Leks2000](https://github.com/Leks2000) - Халле Александр
+ - [LaNs992](https://github.com/LaNs992) - Бажин Кирилл 
+ - [kirillaleynikov](https://github.com/kirillaleynikov) - Алейников Кирилл
+ - [Elvina27]() - Эльвина Коршикова
   ###
 
 </div>
